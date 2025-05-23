@@ -25,7 +25,7 @@ pipeline{
         stage('Deploy') {
           steps {
             sh '''
-              oc project RHT_OCP4_DEV_USER-greetings
+              oc project fucbbm-greetings
               oc start-build greeting-service --follow --wait
             '''
           }
